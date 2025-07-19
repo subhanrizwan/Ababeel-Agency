@@ -11,7 +11,7 @@ export default function ScrollingBanner() {
   ]
 
   return (
-    <div className="w-full overflow-hidden py-4  border-gray-100 mt-5">
+    <div className="w-full overflow-hidden py-4 border-gray-100 mt-0">
       <div className="flex animate-scroll whitespace-nowrap">
         {/* First set of items */}
         <div className="flex items-center space-x-8 px-8">

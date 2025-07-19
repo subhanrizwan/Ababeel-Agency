@@ -100,7 +100,7 @@ function HeroBanner() {
           <img
             src={BannerImg}
             alt="Banner"
-            className="w-full max-w-[700px] h-auto object-contain"
+            className="w-full max-w-[500px] h-auto object-contain"
           />
         </div>
 

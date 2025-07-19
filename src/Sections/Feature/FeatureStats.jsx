@@ -66,7 +66,7 @@ const SectionDescription = styled(Typography)({
 const CourseTitle = styled(Typography)({
   fontSize: "1.5rem",
   fontWeight: 600,
-  color: "#6366f1",
+  color: "rgb(83, 56, 158)",
   marginBottom: "24px",
   lineHeight: 1.3,
   "@media (max-width: 768px)": {
@@ -76,7 +76,7 @@ const CourseTitle = styled(Typography)({
 
 const DetailLabel = styled(Typography)({
   fontSize: "0.875rem",
-  color: "#6366f1",
+  color: "rgb(83, 56, 158)",
   fontWeight: 500,
   marginBottom: "4px",
 })
