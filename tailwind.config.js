@@ -7,6 +7,7 @@ export default {
   theme: {
     extend: {
       colors:{
+        bannerbg:'linear-gradient(45deg, rgb(66, 48, 125) 0%, rgb(105, 65, 198) 100%)',
         topheadercolor:'linear-gradient(90deg, rgb(120, 96, 252) 0%, rgb(33, 183, 222) 50%, rgb(127, 235, 140) 100%);',
         primary:'rgb(83, 56, 158)',
         ctabg:'rgb(29, 41, 57);',
