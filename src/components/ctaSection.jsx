@@ -3,7 +3,7 @@ import { Button } from "@mui/material";
 
 const CtaFooter = () => {
   return (
-    <section className="cta-footer bg-ctabg p-7 ">
+    <section className="cta-footer bg-ctabg p-7 lg:p-20 md:p-16 sm:p-12">
       {/* rounded shadow relative top-11 z-30 */}
       {/*  sm:w-2/5 sm:flex-col sm:items-center sm:mb-5*/}
       <div className="w-[100%] flex justify-between md:justify-center flex-wrap md:flex-nowrap bg-ctabg text-white">
@@ -12,7 +12,7 @@ const CtaFooter = () => {
           <h1 className="text-4xl mb-5">Your next chapter in AEC begins with Novatr!</h1>
           <h6  className="font-bold text-1xl text-gray-400">As you would have gathered, we are here to help you take the industry by storm with advanced, tech-first skills.</h6>
         </div>
-        <div className="right-section w-full md:w-1/3 flex justify-center items-center md:justify-center mb-5">
+        <div className="right-section w-full md:w-1/3 flex justify-center items-center md:justify-center mb-8">
           <Button
             className="h-10 w-40 md:text-xs md:w-48 md:h-12 !bg-secondary"
             variant="contained"

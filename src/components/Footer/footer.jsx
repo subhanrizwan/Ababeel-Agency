@@ -1,5 +1,6 @@
 import { Link } from "react-router";
 import { TextField, Button } from "@mui/material";
+import { NavLink } from "react-router";
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
@@ -22,7 +23,16 @@ function Footer() {
               <h1 className="text-5xl font-bold text-primary">
                 Dare to Disrupt
               </h1>
-              <p className="pt-5 text-1xl md:text-md">
+                <div className="pt-10">
+                          <NavLink className="-m-1.5 p-1.5">
+                            <img
+                              alt=""
+                              src="/assets/images/logo/logo_new.svg"
+                              className="h-8 w-auto"
+                            />  
+                          </NavLink>
+                        </div>  
+              <p className="text-1xl md:text-md">
                 Join thousands of people who are taking AEC by storm with
                 Novatr.{" "}
               </p>
