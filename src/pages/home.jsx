@@ -8,6 +8,9 @@ import CareerPathSection from "../Sections/CareerPath/CareerPathSection.jsx";
 import OurImpact from "../Sections/Impact/Ourimpact.jsx";
 import ScrollingBanner from "../Sections/Scrolling-Banner/BannnerScrolling.jsx";
 import CourseSection from "../Sections/Feature/FeatureStats.jsx";
+import ScrollingContainer from '../Sections/ScrollingContainer/Scrollingdiv.jsx'
+import CommunitySection from "../Sections/Community/CommunitySections.jsx";
+import ResourcesSection from "../Sections/MoreAbout/index.jsx";
 // import Featured from "../Sections/HomeSection/NewArrival/Featured.jsx";
 const Home = () => {
   // const { name, HomeHeroSection } = useAppContext();
@@ -18,6 +21,9 @@ const Home = () => {
     <OurImpact />
     <ScrollingBanner />
     <CourseSection />
+    <ScrollingContainer />
+    <CommunitySection />
+    <ResourcesSection />
     {/* <Herosection /> */}
     {/* <Products /> */}
     {/* <Featured /> */}

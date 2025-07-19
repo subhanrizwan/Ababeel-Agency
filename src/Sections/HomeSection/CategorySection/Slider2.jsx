@@ -33,7 +33,7 @@ const StyledSlide = styled(SwiperSlide)`
   color: #000;
   border: 1px solid lightgray;
   border-radius: 2%;
-  background: transparent;
+  background: #eeeeee;
   height: 450px;
   display: flex;
   justify-content: center;
@@ -41,9 +41,10 @@ const StyledSlide = styled(SwiperSlide)`
   transition: 0.3s;
   cursor: pointer;
   padding:3rem;
+  transition:all 0.3s;
   &:hover {
-    background-color: #db4444;
-    color: white;
+    background-color:transparent;
+    // color: white;
   }
     
 `;
