@@ -6,6 +6,15 @@ export default {
   ],
   theme: {
     extend: {
+        keyframes: {
+        scroll: {
+          '0%': { transform: 'translateX(0%)' },
+          '100%': { transform: 'translateX(-100%)' },
+        },
+      },
+      animation: {
+        scroll: 'scroll 30s linear infinite',
+      },
       colors:{
         bannerbg:'linear-gradient(45deg, rgb(66, 48, 125) 0%, rgb(105, 65, 198) 100%)',
         topheadercolor:'linear-gradient(90deg, rgb(120, 96, 252) 0%, rgb(33, 183, 222) 50%, rgb(127, 235, 140) 100%);',

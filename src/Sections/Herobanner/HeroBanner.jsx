@@ -29,7 +29,7 @@ function HeroBanner() {
           alt="Decoration"
           className="absolute -top-12 -left-12 w-24 h-24 md:w-32 md:h-32 z-0"
         />
-
+{/* 
         <div className="text-2xl sm:text-3xl md:text-4xl font-bold mb-6 relative z-10">
           Empowering next-gen architects and engineers towards career success
         </div>
@@ -46,8 +46,22 @@ function HeroBanner() {
           <Button className="w-full sm:w-40 h-12 !text-sm !bg-[#9B7CFF] text-white font-semibold" variant="contained">
             Request a Call Back
           </Button>
+        </div> */}
+  {/* <div> */}
+              <h1 className="text-4xl lg:text-5xl font-bold mb-6 leading-tight">
+                Empowering next-gen architects and engineers for career success
+              </h1>
+              <p className="text-xl mb-8 text-purple-100">
+                Join thousands of professionals who have transformed their careers with our industry-leading programs
+              </p>
+            <div className="flex flex-col sm:flex-row gap-4 mb-8 relative z-10">
+          <Button className="w-full sm:w-40 h-12 !text-sm !bg-white !text-black font-semibold" variant="contained">
+            Explore Courses
+          </Button>
+          <Button className="w-full sm:w-40 h-12 !text-sm !bg-[#9B7CFF] text-white font-semibold" variant="contained">
+            Request a Call Back
+          </Button>
         </div>
-
         <div className="text-xs text-gray-200 mb-4 relative z-10">
           <small>Learn from experts working at</small>
         </div>

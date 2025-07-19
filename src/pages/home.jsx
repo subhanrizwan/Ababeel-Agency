@@ -5,6 +5,9 @@ import Products from "../Sections/HomeSection/Products/Products.jsx";
 import Category2 from "../Sections/HomeSection/CategorySection/Category.jsx";
 import FeatureHighlight from "../Sections/HomeSection/FetaureHighlight/FeatureHighlight.jsx";
 import CareerPathSection from "../Sections/CareerPath/CareerPathSection.jsx";
+import OurImpact from "../Sections/Impact/Ourimpact.jsx";
+import ScrollingBanner from "../Sections/Scrolling-Banner/BannnerScrolling.jsx";
+import CourseSection from "../Sections/Feature/FeatureStats.jsx";
 // import Featured from "../Sections/HomeSection/NewArrival/Featured.jsx";
 const Home = () => {
   // const { name, HomeHeroSection } = useAppContext();
@@ -12,10 +15,13 @@ const Home = () => {
     <>
     <HeroBanner />
     <CareerPathSection />
+    <OurImpact />
+    <ScrollingBanner />
+    <CourseSection />
     {/* <Herosection /> */}
-    <Products />
-    <Featured />
-    <FeatureHighlight />
+    {/* <Products /> */}
+    {/* <Featured /> */}
+    {/* <FeatureHighlight /> */}
     <Category2 />
     </>
   )
