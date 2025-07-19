@@ -3,14 +3,14 @@ import { NavLink , Link } from 'react-router';
 import { useState } from 'react'
 import { Dialog, DialogContent } from "@mui/material";
 import { HiBars3, HiXMark } from "react-icons/hi2";
-
+import PersonIcon from '@mui/icons-material/Person';
 const navigation = [
-  { name: 'Home', path: '/' },
-  { name: 'About', path: '/about' },
-  { name: 'Shop', path: '/shop' },
-  { name: 'Product', path: '/product' },
-  { name: 'Blog', path: '/blog' },
-  { name: 'Contact', path: '/contact' },
+  { name: 'Hire From Us', path: '/' },
+  { name: 'Events', path: '/about' },
+  { name: 'Our Impact', path: '/shop' },
+  { name: 'Career Counselling', path: '/product' },
+  // { name: 'Blog', path: '/blog' },
+  // { name: 'Contact', path: '/contact' },
 ]
 
 export default function Header() {
@@ -24,7 +24,7 @@ export default function Header() {
             <NavLink className="-m-1.5 p-1.5">
               <img
                 alt=""
-                src="/assets/Chigai_kuginuki.png"
+                src="/assets/images/logo/logo_new.svg"
                 className="h-8 w-auto"
               />  
             </NavLink>
@@ -45,17 +45,19 @@ export default function Header() {
                key={item.name}
                to ={item.path} 
                className={({ isActive }) =>
-                `menu relative hover:text-color1 ${
-                  isActive ? "text-color1 font-medium" : "text-black"
+                `menu relative hover:text-primary font-semibold ${
+                  isActive ? "text-primary font-medium" : "text-black"
                 } duration-250 md:py-2 cursor-pointer `
               }>
                 {item.name}
               </NavLink>
             ))}
           </div>
-          <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-            <NavLink href="#" className="text-sm/6 font-semibold text-gray-900">
-              Log in <span aria-hidden="true">&rarr;</span>
+          <div className="hidden lg:flex lg:flex-1 lg:justify-end lg:items-center">
+            <NavLink href="#" className="text-sm/6 font-semibold text-primary">
+            <PersonIcon fontSize='medium'/> {" "}
+              Log in 
+              {/* <span aria-hidden="true">&rarr;</span> */}
             </NavLink>
           </div>
         </nav>
@@ -82,14 +84,14 @@ export default function Header() {
             </div>
             <div className="mt-6 flow-root">
               <div className="-my-6 divide-y divide-gray-500/10">
-                <div className="space-y-2 py-6">
+                <div className="space-y-2 py-6 ">
                     {navigation.map((item) => (
                       <NavLink
                         key={item.name}
                         to={item.path}
                         className={({isActive})=> 
-                          `-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibol hover:text-color1 
-                        ${isActive ? "text-color1 font-medium" : "text-gray-900"}`
+                          `-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibol text-primary 
+                        ${isActive ? "text-primary font-medium" : "text-primary"}`
                         }>
                         {item.name}
                       </NavLink>

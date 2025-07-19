@@ -3,19 +3,21 @@ import { Button } from "@mui/material";
 
 const CtaFooter = () => {
   return (
-    <section className="cta-footer ">
+    <section className="cta-footer bg-ctabg p-7 ">
+      {/* rounded shadow relative top-11 z-30 */}
       {/*  sm:w-2/5 sm:flex-col sm:items-center sm:mb-5*/}
-      <div className="w-2/3 md:w-7/12 sm:w-9/12 flex justify-between flex-wrap md:flex-nowrap sm:flex-nowrap sm:flex-nowrapF bg-Fieldbg mx-auto p-9 rounded shadow relative top-11 z-30">
-        <div className="left-section w-full text-center md:text-left sm:text-left mb-5 md:mb-0 sm:mb-0">
-          <p>Ready to get started?</p>
-          <p>Talk to us today </p>
+      <div className="w-[100%] flex justify-between md:justify-center flex-wrap md:flex-nowrap bg-ctabg text-white">
+        <div className="left-section w-full md:w-4/6 text-center md:text-left mb-5 md:pl-10 md:p-5">
+          <h6 className="font-bold text-1xl text-gray-400 mb-5">Ready to skyrocket your career?</h6>
+          <h1 className="text-4xl mb-5">Your next chapter in AEC begins with Novatr!</h1>
+          <h6  className="font-bold text-1xl text-gray-400">As you would have gathered, we are here to help you take the industry by storm with advanced, tech-first skills.</h6>
         </div>
-        <div className="right-section flex justify-center md:justify-end sm:justify-end w-full">
+        <div className="right-section w-full md:w-1/3 flex justify-center items-center md:justify-center mb-5">
           <Button
-            className="h-9 w-32 md:text-xs md:w-40 md:h-12 !bg-secondary"
+            className="h-10 w-40 md:text-xs md:w-48 md:h-12 !bg-secondary"
             variant="contained"
           >
-            <span className="text-xs md:text-base">Get Started</span>
+            <span className="text-xs lg:text-xs md:text-base">Explore Courses</span>
           </Button>
         </div>
       </div>
