@@ -8,6 +8,7 @@ import { MdMarkEmailUnread } from "react-icons/md";
 import CtaFooter from "../ctaSection";
 import FooterBottom from "./footerBottom";
 import Footerlogo from "../../../assets/images/footer logo/footer-logo.webp";
+import Logo from '../../../assets/images/logo/logo_new.svg'
 function Footer() {
   return (
     <>
@@ -27,7 +28,7 @@ function Footer() {
                           <NavLink className="-m-1.5 p-1.5">
                             <img
                               alt=""
-                              src="/assets/images/logo/logo_new.svg"
+                              src={Logo}
                               className="h-8 w-auto"
                             />  
                           </NavLink>

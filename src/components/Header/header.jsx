@@ -4,6 +4,7 @@ import { useState } from 'react'
 import { Dialog, DialogContent } from "@mui/material";
 import { HiBars3, HiXMark } from "react-icons/hi2";
 import PersonIcon from '@mui/icons-material/Person';
+import Logo from '../../../assets/images/logo/logo_new.svg'
 const navigation = [
   { name: 'Hire From Us', path: '/' },
   { name: 'Events', path: '/' },
@@ -24,7 +25,7 @@ export default function Header() {
             <NavLink className="-m-1.5 p-1.5">
               <img
                 alt=""
-                src="/assets/images/logo/logo_new.svg"
+                src={Logo}
                 className="h-8 w-auto"
               />  
             </NavLink>
