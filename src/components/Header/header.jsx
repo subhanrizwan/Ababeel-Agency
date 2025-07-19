@@ -6,9 +6,9 @@ import { HiBars3, HiXMark } from "react-icons/hi2";
 import PersonIcon from '@mui/icons-material/Person';
 const navigation = [
   { name: 'Hire From Us', path: '/' },
-  { name: 'Events', path: '/about' },
-  { name: 'Our Impact', path: '/shop' },
-  { name: 'Career Counselling', path: '/product' },
+  { name: 'Events', path: '/' },
+  { name: 'Our Impact', path: '/' },
+  { name: 'Career Counselling', path: '/' },
   // { name: 'Blog', path: '/blog' },
   // { name: 'Contact', path: '/contact' },
 ]
@@ -44,11 +44,15 @@ export default function Header() {
               <NavLink
                key={item.name}
                to ={item.path} 
-               className={({ isActive }) =>
-                `menu relative hover:text-primary font-semibold ${
-                  isActive ? "text-primary font-medium" : "text-black"
-                } duration-250 md:py-2 cursor-pointer `
-              }>
+               className={(
+                `hover:text-primary text-semibold`
+               )}
+              //  className={({ isActive }) =>
+              //   `menu relative hover:text-primary font-semibold ${
+              //     isActive ? "text-primary font-medium" : "text-black"
+              //   } duration-250 md:py-2 cursor-pointer `
+              // }
+              >
                 {item.name}
               </NavLink>
             ))}
